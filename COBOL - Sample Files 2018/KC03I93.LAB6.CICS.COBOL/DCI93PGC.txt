@@ -1,0 +1,289 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. DCI93PGC.
+       AUTHOR. ANDREW MAYNE AND SARAH POWELL.
+
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+      * COPY INQUIRY MAP LAYOUT
+       COPY 'DCI93MC'.
+
+      * COPY ACCTFILE RECORD LAYOUT
+       COPY 'STUREC'.
+
+       01 WS-COMMAREA.
+           05  STU-NUML2    COMP  PIC S9(4).
+           05  STU-NUMI2          PIC X(7).
+           05  COURSE1AL2   COMP  PIC S9(4).
+           05  COURSE1AI2         PIC X(4).
+           05  COURSE1BL2   COMP  PIC S9(4).
+           05  COURSE1BI2         PIC X(4).
+           05  COURSE2AL2   COMP  PIC S9(4).
+           05  COURSE2AI2         PIC X(4).
+           05  COURSE2BL2   COMP  PIC S9(4).
+           05  COURSE2BI2         PIC X(4).
+           05  COURSE3AL2   COMP  PIC S9(4).
+           05  COURSE3AI2         PIC X(4).
+           05  COURSE3BL2   COMP  PIC S9(4).
+           05  COURSE3BI2         PIC X(4).
+           05  COURSE4AL2   COMP  PIC S9(4).
+           05  COURSE4AI2         PIC X(4).
+           05  COURSE4BL2   COMP  PIC S9(4).
+           05  COURSE4BI2         PIC X(4).
+           05  COURSE5AL2   COMP  PIC S9(4).
+           05  COURSE5AI2         PIC X(4).
+           05  COURSE5BL2   COMP  PIC S9(4).
+           05  COURSE5BI2         PIC X(4).
+           05  STU-NAMEL2   COMP  PIC S9(4).
+           05  STU-NAMEI2         PIC X(20).
+           05  ADDRESS1L2   COMP  PIC S9(4).
+           05  ADDRESS1I2         PIC X(20).
+           05  ADDRESS2L2   COMP  PIC S9(4).
+           05  ADDRESS2I2         PIC X(20).
+           05  ADDRESS3L2   COMP  PIC S9(4).
+           05  ADDRESS3I2         PIC X(20).
+           05  POSTAL1L2    COMP  PIC S9(4).
+           05  POSTAL1I2          PIC X(3).
+           05  POSTAL2L2    COMP  PIC S9(4).
+           05  POSTAL2I2          PIC X(3).
+           05  PHONE1L2     COMP  PIC S9(4).
+           05  PHONE1I2           PIC X(3).
+           05  PHONE2L2     COMP  PIC S9(4).
+           05  PHONE2I2           PIC X(3).
+           05  PHONE3L2     COMP  PIC S9(4).
+           05  PHONE3I2           PIC X(4).
+           05  ERRORCODE          PIC X(2).
+           05  MSGBACK            PIC X(60).
+           05  NAMELEN            PIC 9(2).
+
+
+
+       01 WS-COMMAREA-LENGTH PIC S9(4) COMP VALUE 285.
+
+       01 WS-MESSAGE PIC X(60) VALUE SPACES.
+
+       LINKAGE SECTION.
+
+       PROCEDURE DIVISION.
+
+       000-START-LOGIC.
+
+      * UPON UNSUCCESSFUL MAP RECEIVE, ASSUME THIS IS THE INITIAL RUN
+      * TODO: ADD CONDITION FOR RECORD NOT FOUND IN ACCTFILE
+
+           IF (EIBCALEN = 1) THEN
+               GO TO 100-FIRST-TIME
+           END-IF.
+
+           EXEC CICS HANDLE CONDITION
+                MAPFAIL(100-FIRST-TIME)
+                DUPREC(400-DUPREC)
+           END-EXEC.
+
+      * ATTEMPT TO RECEIVE MAP FROM TERMINAL
+           EXEC CICS RECEIVE
+                MAP('MAP1')
+                MAPSET('DCI93MC')
+           END-EXEC.
+
+
+      * RECEIVE WAS SUCCESSFUL, PROCEED WITH MAIN PROCESSING
+           GO TO 200-MAIN-LOGIC.
+
+       100-FIRST-TIME.
+
+           MOVE LOW-VALUES TO MAP1O.
+
+           EXEC CICS SEND
+               MAP('MAP1')
+               MAPSET('DCI93MC')
+               ERASE
+           END-EXEC.
+
+           EXEC CICS RETURN
+               TRANSID('I932')
+           END-EXEC.
+
+       200-MAIN-LOGIC.
+
+
+
+      * TODO: IMPLEMENT VALIDATION LOGIC
+           IF(STU-NUMI = 'XXXXXXX')
+               GO TO 999-EXIT
+           END-IF.
+
+      * TODO: ATTEMPT TO FIND AN ACCOUNT RECORD IN ACCTFILE
+      *       FROM USER INPUT ACCOUNTNO
+
+           MOVE STU-NUML TO STU-NUML2.
+           MOVE STU-NUMI TO STU-NUMI2.
+           MOVE COURSE1AL TO COURSE1AL2.
+           MOVE COURSE1AI TO COURSE1AI2.
+           MOVE COURSE1BL TO COURSE1BL2.
+           MOVE COURSE1BI TO COURSE1BI2.
+           MOVE COURSE2AL TO COURSE2AL2.
+           MOVE COURSE2AI TO COURSE2AI2.
+           MOVE COURSE2BL TO COURSE2BL2.
+           MOVE COURSE2BI TO COURSE2BI2.
+           MOVE COURSE3AI TO COURSE3AI2.
+           MOVE COURSE3AL TO COURSE3AL2.
+           MOVE COURSE3BI TO COURSE3BI2.
+           MOVE COURSE3BL TO COURSE3BL2.
+           MOVE COURSE4AI TO COURSE4AI2.
+           MOVE COURSE4AL TO COURSE4AL2.
+           MOVE COURSE4BI TO COURSE4BI2.
+           MOVE COURSE4BL TO COURSE4BL2.
+           MOVE COURSE5AI TO COURSE5AI2.
+           MOVE COURSE5AL TO COURSE5AL2.
+           MOVE COURSE5BI TO COURSE5BI2.
+           MOVE COURSE5BL TO COURSE5BL2.
+           MOVE STU-NAMEL TO STU-NAMEL2.
+           MOVE STU-NAMEI TO STU-NAMEI2.
+           MOVE ADDRESS1L TO ADDRESS1L2.
+           MOVE ADDRESS1I TO ADDRESS1I2.
+           MOVE ADDRESS2L TO ADDRESS2L2.
+           MOVE ADDRESS2I TO ADDRESS2I2.
+           MOVE ADDRESS3L TO ADDRESS3L2.
+           MOVE ADDRESS3I TO ADDRESS3I2.
+           MOVE POSTAL1L TO POSTAL1L2.
+           MOVE POSTAL1I TO POSTAL1I2.
+           MOVE POSTAL2L TO POSTAL2L2.
+           MOVE POSTAL2I TO POSTAL2I2.
+           MOVE PHONE1L TO PHONE1L2.
+           MOVE PHONE1I TO PHONE1I2.
+           MOVE PHONE2L TO PHONE2L2.
+           MOVE PHONE2I TO PHONE2I2.
+           MOVE PHONE3L TO PHONE3L2.
+           MOVE PHONE3I TO PHONE3I2.
+           MOVE 0 TO NAMELEN.
+
+           EXEC CICS LINK
+               PROGRAM('DCI93PGE')
+               COMMAREA(WS-COMMAREA)
+               LENGTH(WS-COMMAREA-LENGTH)
+           END-EXEC.
+
+      *    MOVE LOW-VALUES TO MAP1O.
+           MOVE MSGBACK TO WS-MESSAGE.
+           IF ERRORCODE = "00"
+               GO TO 300-VALID
+           ELSE
+               GO TO 800-INVALID
+           END-IF.
+
+       300-VALID.
+           MOVE STU-NUMI TO STU-NUMBER.
+           MOVE STU-NAMEI TO STU-NAME.
+
+           MOVE COURSE1AI TO STU-COURSE-1(1:4).
+           MOVE COURSE1BI TO STU-COURSE-1(5:4).
+           MOVE COURSE2AI TO STU-COURSE-2(1:4).
+           MOVE COURSE2BI TO STU-COURSE-2(5:4).
+           MOVE COURSE3AI TO STU-COURSE-3(1:4).
+           MOVE COURSE3BI TO STU-COURSE-3(5:4).
+           MOVE COURSE4AI TO STU-COURSE-4(1:4).
+           MOVE COURSE4BI TO STU-COURSE-4(5:4).
+           MOVE COURSE5AI TO STU-COURSE-5(1:4).
+           MOVE COURSE5BI TO STU-COURSE-5(5:4).
+
+           MOVE ADDRESS1I TO STU-ADDRESS-1.
+           MOVE ADDRESS2I TO STU-ADDRESS-2.
+           MOVE ADDRESS3I TO STU-ADDRESS-3.
+
+           MOVE POSTAL1I TO STU-POSTAL-1.
+           MOVE POSTAL2I TO STU-POSTAL-2.
+
+           MOVE PHONE1I TO STU-PHONE-1.
+           MOVE PHONE2I TO STU-PHONE-2.
+           MOVE PHONE3I TO STU-PHONE-3.
+
+           EXEC CICS WRITE
+               FILE('STUFILE')
+               FROM(STUFILE-RECORD)
+               RIDFLD(STU-KEY)
+           END-EXEC.
+
+
+      * RECORD FOUND, MOVE VALUES TO MAP OUTPUTS
+           MOVE LOW-VALUES TO MAP1O.
+           MOVE "RECORD SUCCESSFULLY CREATED!" TO MSGO.
+
+           EXEC CICS SEND
+               MAP('MAP1')
+               MAPSET('DCI93MC')
+               ERASE
+           END-EXEC.
+
+           EXEC CICS RETURN
+               TRANSID('I932')
+           END-EXEC.
+
+       400-DUPREC.
+
+           MOVE LOW-VALUES TO MAP1O.
+           MOVE 'STUDENT ALREADY EXISTS' TO MSGO.
+
+           EXEC CICS SEND
+               MAP('MAP1')
+               MAPSET('DCI93MC')
+               ERASE
+           END-EXEC.
+
+           EXEC CICS RETURN
+               TRANSID('I932')
+           END-EXEC.
+
+       800-INVALID.
+           MOVE LOW-VALUES TO MAP1O.
+           EVALUATE ERRORCODE
+               WHEN "01"
+                   MOVE -1 TO STU-NUML
+               WHEN "02"
+                   MOVE -1 TO COURSE1AL
+               WHEN "03"
+                   MOVE -1 TO COURSE2AL
+               WHEN "04"
+                   MOVE -1 TO COURSE3AL
+               WHEN "05"
+                   MOVE -1 TO COURSE4AL
+               WHEN "06"
+                   MOVE -1 TO COURSE5AL
+               WHEN "07"
+                   MOVE -1 TO STU-NAMEL
+               WHEN "08"
+                   MOVE -1 TO ADDRESS1L
+               WHEN "09"
+                   MOVE -1 TO ADDRESS2L
+               WHEN "10"
+                   MOVE -1 TO POSTAL1L
+               WHEN OTHER
+                   MOVE -1 TO PHONE1L
+           END-EVALUATE.
+
+
+           MOVE WS-MESSAGE TO MSGO.
+
+           EXEC CICS SEND
+               MAP('MAP1')
+               MAPSET('DCI93MC')
+               CURSOR
+           END-EXEC.
+
+           EXEC CICS RETURN
+               TRANSID('I932')
+           END-EXEC.
+
+       999-EXIT.
+           MOVE LOW-VALUES TO MAP1O.
+           MOVE 'PROGRAM ENDING' TO MSGO.
+           EXEC CICS SEND
+               MAP('MAP1')
+               MAPSET('DCI93MC')
+           END-EXEC.
+
+           EXEC CICS RETURN END-EXEC.
+
+       END PROGRAM DCI93PGC.

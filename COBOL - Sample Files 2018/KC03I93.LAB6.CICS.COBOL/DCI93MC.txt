@@ -1,0 +1,234 @@
+       01  MAP1I.
+           02  FILLER PIC X(12).
+           02  TITLE1L    COMP  PIC  S9(4).
+           02  TITLE1F    PICTURE X.
+           02  FILLER REDEFINES TITLE1F.
+             03 TITLE1A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  TITLE1I  PIC X(28).
+           02  TITLE2L    COMP  PIC  S9(4).
+           02  TITLE2F    PICTURE X.
+           02  FILLER REDEFINES TITLE2F.
+             03 TITLE2A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  TITLE2I  PIC X(28).
+           02  STU-NUML    COMP  PIC  S9(4).
+           02  STU-NUMF    PICTURE X.
+           02  FILLER REDEFINES STU-NUMF.
+             03 STU-NUMA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  STU-NUMI  PIC X(7).
+           02  COURSE1AL    COMP  PIC  S9(4).
+           02  COURSE1AF    PICTURE X.
+           02  FILLER REDEFINES COURSE1AF.
+             03 COURSE1AA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE1AI  PIC X(4).
+           02  COURSE1BL    COMP  PIC  S9(4).
+           02  COURSE1BF    PICTURE X.
+           02  FILLER REDEFINES COURSE1BF.
+             03 COURSE1BA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE1BI  PIC X(4).
+           02  COURSE2AL    COMP  PIC  S9(4).
+           02  COURSE2AF    PICTURE X.
+           02  FILLER REDEFINES COURSE2AF.
+             03 COURSE2AA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE2AI  PIC X(4).
+           02  COURSE2BL    COMP  PIC  S9(4).
+           02  COURSE2BF    PICTURE X.
+           02  FILLER REDEFINES COURSE2BF.
+             03 COURSE2BA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE2BI  PIC X(4).
+           02  COURSE3AL    COMP  PIC  S9(4).
+           02  COURSE3AF    PICTURE X.
+           02  FILLER REDEFINES COURSE3AF.
+             03 COURSE3AA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE3AI  PIC X(4).
+           02  COURSE3BL    COMP  PIC  S9(4).
+           02  COURSE3BF    PICTURE X.
+           02  FILLER REDEFINES COURSE3BF.
+             03 COURSE3BA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE3BI  PIC X(4).
+           02  COURSE4AL    COMP  PIC  S9(4).
+           02  COURSE4AF    PICTURE X.
+           02  FILLER REDEFINES COURSE4AF.
+             03 COURSE4AA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE4AI  PIC X(4).
+           02  COURSE4BL    COMP  PIC  S9(4).
+           02  COURSE4BF    PICTURE X.
+           02  FILLER REDEFINES COURSE4BF.
+             03 COURSE4BA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE4BI  PIC X(4).
+           02  COURSE5AL    COMP  PIC  S9(4).
+           02  COURSE5AF    PICTURE X.
+           02  FILLER REDEFINES COURSE5AF.
+             03 COURSE5AA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE5AI  PIC X(4).
+           02  COURSE5BL    COMP  PIC  S9(4).
+           02  COURSE5BF    PICTURE X.
+           02  FILLER REDEFINES COURSE5BF.
+             03 COURSE5BA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COURSE5BI  PIC X(4).
+           02  STU-NAMEL    COMP  PIC  S9(4).
+           02  STU-NAMEF    PICTURE X.
+           02  FILLER REDEFINES STU-NAMEF.
+             03 STU-NAMEA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  STU-NAMEI  PIC X(20).
+           02  ADDRESS1L    COMP  PIC  S9(4).
+           02  ADDRESS1F    PICTURE X.
+           02  FILLER REDEFINES ADDRESS1F.
+             03 ADDRESS1A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  ADDRESS1I  PIC X(20).
+           02  ADDRESS2L    COMP  PIC  S9(4).
+           02  ADDRESS2F    PICTURE X.
+           02  FILLER REDEFINES ADDRESS2F.
+             03 ADDRESS2A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  ADDRESS2I  PIC X(20).
+           02  ADDRESS3L    COMP  PIC  S9(4).
+           02  ADDRESS3F    PICTURE X.
+           02  FILLER REDEFINES ADDRESS3F.
+             03 ADDRESS3A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  ADDRESS3I  PIC X(20).
+           02  POSTAL1L    COMP  PIC  S9(4).
+           02  POSTAL1F    PICTURE X.
+           02  FILLER REDEFINES POSTAL1F.
+             03 POSTAL1A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  POSTAL1I  PIC X(3).
+           02  POSTAL2L    COMP  PIC  S9(4).
+           02  POSTAL2F    PICTURE X.
+           02  FILLER REDEFINES POSTAL2F.
+             03 POSTAL2A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  POSTAL2I  PIC X(3).
+           02  PHONE1L    COMP  PIC  S9(4).
+           02  PHONE1F    PICTURE X.
+           02  FILLER REDEFINES PHONE1F.
+             03 PHONE1A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  PHONE1I  PIC X(3).
+           02  PHONE2L    COMP  PIC  S9(4).
+           02  PHONE2F    PICTURE X.
+           02  FILLER REDEFINES PHONE2F.
+             03 PHONE2A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  PHONE2I  PIC X(3).
+           02  PHONE3L    COMP  PIC  S9(4).
+           02  PHONE3F    PICTURE X.
+           02  FILLER REDEFINES PHONE3F.
+             03 PHONE3A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  PHONE3I  PIC X(4).
+           02  MSGL    COMP  PIC  S9(4).
+           02  MSGF    PICTURE X.
+           02  FILLER REDEFINES MSGF.
+             03 MSGA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  MSGI  PIC X(50).
+       01  MAP1O REDEFINES MAP1I.
+           02  FILLER PIC X(12).
+           02  FILLER PICTURE X(3).
+           02  TITLE1C    PICTURE X.
+           02  TITLE1H    PICTURE X.
+           02  TITLE1O  PIC X(28).
+           02  FILLER PICTURE X(3).
+           02  TITLE2C    PICTURE X.
+           02  TITLE2H    PICTURE X.
+           02  TITLE2O  PIC X(28).
+           02  FILLER PICTURE X(3).
+           02  STU-NUMC    PICTURE X.
+           02  STU-NUMH    PICTURE X.
+           02  STU-NUMO  PIC X(7).
+           02  FILLER PICTURE X(3).
+           02  COURSE1AC    PICTURE X.
+           02  COURSE1AH    PICTURE X.
+           02  COURSE1AO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  COURSE1BC    PICTURE X.
+           02  COURSE1BH    PICTURE X.
+           02  COURSE1BO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  COURSE2AC    PICTURE X.
+           02  COURSE2AH    PICTURE X.
+           02  COURSE2AO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  COURSE2BC    PICTURE X.
+           02  COURSE2BH    PICTURE X.
+           02  COURSE2BO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  COURSE3AC    PICTURE X.
+           02  COURSE3AH    PICTURE X.
+           02  COURSE3AO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  COURSE3BC    PICTURE X.
+           02  COURSE3BH    PICTURE X.
+           02  COURSE3BO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  COURSE4AC    PICTURE X.
+           02  COURSE4AH    PICTURE X.
+           02  COURSE4AO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  COURSE4BC    PICTURE X.
+           02  COURSE4BH    PICTURE X.
+           02  COURSE4BO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  COURSE5AC    PICTURE X.
+           02  COURSE5AH    PICTURE X.
+           02  COURSE5AO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  COURSE5BC    PICTURE X.
+           02  COURSE5BH    PICTURE X.
+           02  COURSE5BO  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  STU-NAMEC    PICTURE X.
+           02  STU-NAMEH    PICTURE X.
+           02  STU-NAMEO  PIC X(20).
+           02  FILLER PICTURE X(3).
+           02  ADDRESS1C    PICTURE X.
+           02  ADDRESS1H    PICTURE X.
+           02  ADDRESS1O  PIC X(20).
+           02  FILLER PICTURE X(3).
+           02  ADDRESS2C    PICTURE X.
+           02  ADDRESS2H    PICTURE X.
+           02  ADDRESS2O  PIC X(20).
+           02  FILLER PICTURE X(3).
+           02  ADDRESS3C    PICTURE X.
+           02  ADDRESS3H    PICTURE X.
+           02  ADDRESS3O  PIC X(20).
+           02  FILLER PICTURE X(3).
+           02  POSTAL1C    PICTURE X.
+           02  POSTAL1H    PICTURE X.
+           02  POSTAL1O  PIC X(3).
+           02  FILLER PICTURE X(3).
+           02  POSTAL2C    PICTURE X.
+           02  POSTAL2H    PICTURE X.
+           02  POSTAL2O  PIC X(3).
+           02  FILLER PICTURE X(3).
+           02  PHONE1C    PICTURE X.
+           02  PHONE1H    PICTURE X.
+           02  PHONE1O  PIC X(3).
+           02  FILLER PICTURE X(3).
+           02  PHONE2C    PICTURE X.
+           02  PHONE2H    PICTURE X.
+           02  PHONE2O  PIC X(3).
+           02  FILLER PICTURE X(3).
+           02  PHONE3C    PICTURE X.
+           02  PHONE3H    PICTURE X.
+           02  PHONE3O  PIC X(4).
+           02  FILLER PICTURE X(3).
+           02  MSGC    PICTURE X.
+           02  MSGH    PICTURE X.
+           02  MSGO  PIC X(50).
