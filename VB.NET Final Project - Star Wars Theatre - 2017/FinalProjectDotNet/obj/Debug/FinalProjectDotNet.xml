@@ -1,0 +1,260 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FinalProjectDotNet
+</name>
+</assembly>
+<members>
+<member name="T:FinalProjectDotNet.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.b0a2c360786fc18c1feb10b40c732b17">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.b0a2c360786fc18c1feb10b40c732b171">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Battleship01">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.darth3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.darth31">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.darth32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.DC_white">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.deathstar">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.imperial_march">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.l_7081bbe0_f87b_11e1_b95f_777036e00007">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Poster1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Poster2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Poster3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Poster4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Poster5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Poster6">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Poster7">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Poster8">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Storm07">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.thumb_1920_35223">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FinalProjectDotNet.My.Resources.Resources.Vader02">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:FinalProjectDotNet.DBL.Tables.datTicketsSold.anyTicketsSold(System.Int32,System.Int32)">
+ <summary>
+ gets boolean that returns if any tickets in showing are reserved or paid for
+ </summary>
+ <param name="showingID"></param>
+ <param name="seatNo"></param>
+ <returns></returns>
+</member>
+<member name="M:FinalProjectDotNet.DBL.Tables.datTicketsSold.isTicketPaid(System.Int32,System.Int32)">
+ <summary>
+ gets boolean representing if the seat is paid for
+ </summary>
+ <param name="showingID"></param>
+ <param name="seatNo"></param>
+ <returns></returns>
+</member>
+<member name="M:FinalProjectDotNet.DBL.Tables.datTicketsSold.getAttendeeBySeat(System.Int32,System.Int32)">
+ <summary>
+ Get the Attendee name by seat and showing data
+ </summary>
+ <param name="seatNo"></param>
+ <param name="showingID"></param>
+ <returns></returns>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet.datMoviesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet.datMovieTimesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet.datTicketsSoldDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet.datMoviesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet.datMovieTimesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet.datTicketsSoldRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet.datMoviesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet.datMovieTimesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSet.datTicketsSoldRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSetTableAdapters.datMoviesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSetTableAdapters.datMovieTimesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSetTableAdapters.datTicketsSoldTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FinalProjectDotNet.DBLDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FinalProjectDotNet.DBLDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FinalProjectDotNet.DBLDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FinalProjectDotNet.DBLDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FinalProjectDotNet.DBLDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FinalProjectDotNet.DBLDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FinalProjectDotNet.DBLDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FinalProjectDotNet.DBLDataSetTableAdapters.TableAdapterManager.UpdateAll(FinalProjectDotNet.DBLDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FinalProjectDotNet.DBLDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

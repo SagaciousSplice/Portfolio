@@ -1,0 +1,43 @@
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\FinalProjectDotNet.exe.config
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\DBL.mdf
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\DBL_log.ldf
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\FinalProjectDotNet.exe
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\FinalProjectDotNet.pdb
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\FinalProjectDotNet.xml
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.vbprojResolveAssemblyReference.cache
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmMain.resources
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.Resources.resources
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.vbproj.GenerateResource.Cache
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.exe
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.xml
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.pdb
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmSplash.resources
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmCapacity.resources
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmSeating.resources
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmPosterGallery.resources
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmSeatDetails.resources
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmNewFilm.resources
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmUpdateShowings.resources
+C:\Users\sarah\Documents\DC - Student\Winter 2017 Classes\VB Dot Net\Visual Studio Projects\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmChangeShowing.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\DBL.mdf
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\DBL_log.ldf
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\FinalProjectDotNet.exe.config
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\FinalProjectDotNet.exe
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\FinalProjectDotNet.pdb
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\bin\Debug\FinalProjectDotNet.xml
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.vbprojAssemblyReference.cache
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmCapacity.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmChangeShowing.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmMain.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmNewFilm.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmPosterGallery.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmSeatDetails.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmSeating.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmSplash.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.frmUpdateShowings.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.Resources.resources
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.vbproj.GenerateResource.cache
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.vbproj.CoreCompileInputs.cache
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.exe
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.xml
+C:\Users\Sarah\Documents\DC31\CAPR6203\VB Dot Net\Visual Studio Projects\FinalProjectDotNet2\FinalProjectDotNet\FinalProjectDotNet\obj\Debug\FinalProjectDotNet.pdb

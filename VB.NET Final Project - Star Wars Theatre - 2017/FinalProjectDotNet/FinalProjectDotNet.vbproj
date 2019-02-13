@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59C564E7-A961-4D36-B576-CC43191DBF09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FinalProjectDotNet.My.MyApplication</StartupObject>
+    <RootNamespace>FinalProjectDotNet</RootNamespace>
+    <AssemblyName>FinalProjectDotNet</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FinalProjectDotNet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FinalProjectDotNet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>darth2_8gx_2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBL.vb" />
+    <Compile Include="DBLDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBLDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmCapacity.Designer.vb">
+      <DependentUpon>frmCapacity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCapacity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeShowing.Designer.vb">
+      <DependentUpon>frmChangeShowing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangeShowing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewFilm.Designer.vb">
+      <DependentUpon>frmNewFilm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewFilm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPosterGallery.Designer.vb">
+      <DependentUpon>frmPosterGallery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPosterGallery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeatDetails.Designer.vb">
+      <DependentUpon>frmSeatDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeatDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeating.Designer.vb">
+      <DependentUpon>frmSeating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateShowings.Designer.vb">
+      <DependentUpon>frmUpdateShowings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateShowings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCapacity.resx">
+      <DependentUpon>frmCapacity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeShowing.resx">
+      <DependentUpon>frmChangeShowing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewFilm.resx">
+      <DependentUpon>frmNewFilm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPosterGallery.resx">
+      <DependentUpon>frmPosterGallery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeatDetails.resx">
+      <DependentUpon>frmSeatDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeating.resx">
+      <DependentUpon>frmSeating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateShowings.resx">
+      <DependentUpon>frmUpdateShowings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBLDataSet.xsc">
+      <DependentUpon>DBLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBLDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBLDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBLDataSet.xss">
+      <DependentUpon>DBLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="darth2_8gx_2.ico" />
+    <Content Include="DBL.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DBL_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DBL.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\thumb-1920-35223.jpg" />
+    <None Include="Resources\b0a2c360786fc18c1feb10b40c732b171.jpg" />
+    <None Include="Resources\imperial_march.wav" />
+    <None Include="Resources\darth32.jpg" />
+    <None Include="Resources\Vader02.jpg" />
+    <None Include="Resources\darth31.jpg" />
+    <None Include="Resources\l_7081bbe0-f87b-11e1-b95f-777036e00007.jpg" />
+    <None Include="Resources\Poster8.jpg" />
+    <None Include="Resources\Poster7.jpg" />
+    <None Include="Resources\Poster6.jpg" />
+    <None Include="Resources\Poster5.jpg" />
+    <None Include="Resources\Poster4.jpg" />
+    <None Include="Resources\Poster3.jpg" />
+    <None Include="Resources\Poster2.jpg" />
+    <None Include="Resources\Poster1.png" />
+    <None Include="Resources\Storm07.jpg" />
+    <None Include="Resources\b0a2c360786fc18c1feb10b40c732b17.jpg" />
+    <None Include="Resources\Battleship01.jpg" />
+    <None Include="Resources\DC-white.png" />
+    <None Include="Resources\darth3.jpg" />
+    <None Include="Resources\deathstar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
